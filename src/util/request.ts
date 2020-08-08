@@ -1,14 +1,10 @@
 /* eslint-disable @typescript-eslint/no-empty-interface */
 import axios, { AxiosRequestConfig, AxiosResponse, AxiosError } from 'axios';
 
-export interface RequestConfig extends AxiosRequestConfig {
-
-}
+export interface RequestConfig extends AxiosRequestConfig { }
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-export interface Response<T = any> extends AxiosResponse<T> {
-
-}
+export interface Response<T = any> extends AxiosResponse<T> { }
 
 export class Request {
     constructor(private request = axios) { }
